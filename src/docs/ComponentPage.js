@@ -7,14 +7,14 @@ const ComponentPage = ({component})=>{
     const {name, description, props, examples } = component;
 
     return (
-        <div className="componentPage">
+        <div className="componentpage">
             <h2>{name}</h2>
             <p>{description}</p>
             <h3>Пример{examples.length>1 && "ы"}</h3>
             {
                 examples.length>0 ? 
                     examples.map( ex=> <Example key={ex.code} example={ex} componentName={name}/>):
-                    "Приверов пока нет :)"
+                    "Примеров пока нет :)"
             }
             <h3>Props</h3>
             {
