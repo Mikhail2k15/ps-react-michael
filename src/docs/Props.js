@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const Props = ({props})=>{
     return (
         <table className="props">
-        <thead></thead>
+        <thead>
             <tr>
                 <th>Название</th>
                 <th>Описание</th>
@@ -12,6 +12,7 @@ const Props = ({props})=>{
                 <th>Значение по умолчанию</th>
                 <th>Обязательное</th>
             </tr>
+            </thead>
         <tbody>
             {
                 Object.keys(props).map(key=>{
