@@ -8,7 +8,7 @@ const Navigation = ({components})=>{
                 components.map(name=>{
                     return (
                         <li key={name}>
-                            <a href={`#{name}`}>{name}</a>
+                            <a href={`#${name}`}>{name}</a>
                         </li>
                     );
                 })
